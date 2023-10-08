@@ -13,7 +13,7 @@ function speedDetector() {
     console.log('Ok');
   } else {
     const aboveLimit = speed - 70;
-    const demeritPoints = Math.floor(aboveLimit / 5);  // Rounds down the number to the nearest integer
+    const demeritPoints = Math.ceil(aboveLimit / 5);  // Rounds down the number to the nearest integer
     console.log(`Demerit points: ${demeritPoints}`);
     if (demeritPoints > 12) {
       console.log('License suspended!!!')
